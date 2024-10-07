@@ -1,7 +1,5 @@
- 
-import { Zap } from "lucide-react"
-import FeatureCard from "./components/FeatureCard"
-import Header from "./components/Header"
+ import { Route, Routes } from "react-router-dom"
+import LandingPage from "./pages/LandingPage"
  
 
 function App() {
@@ -9,12 +7,9 @@ function App() {
 
   return (
     <>
-      <Header/>
-      <FeatureCard
-            icon={<Zap className="h-10 w-10 mb-4 text-primary" />}
-            title="Lightning Fast"
-            description="Process tasks at unprecedented speeds, saving you valuable time."
-          />
+      <Routes>
+        <Route path="/" element={<LandingPage/>}/>
+      </Routes>
     </>
   )
 }
