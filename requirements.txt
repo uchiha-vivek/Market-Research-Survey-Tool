@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+sqlalchemy
+mysqlclient  # MySQL adapter for SQLAlchemy
+pydantic
+alembic  # for database migrations
+python-dotenv  # for loading environment variables
+requests  # to interact with Claude API
