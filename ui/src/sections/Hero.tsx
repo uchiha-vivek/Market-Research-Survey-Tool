@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import React from "react";
+import { Link } from "react-router-dom";
 
 
 const Hero:React.FC =() => {
@@ -18,7 +19,9 @@ const Hero:React.FC =() => {
             </p>
           </div>
           <div className="space-x-4">
-            <Button>Get Started</Button>
+             <Link to="/survey">
+             <Button>Get Started</Button>
+             </Link>
             <Button variant="outline">Learn More</Button>
           </div>
         </div>

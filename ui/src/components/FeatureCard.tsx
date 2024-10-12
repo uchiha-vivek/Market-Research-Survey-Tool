@@ -4,10 +4,11 @@ import {Card,CardContent} from '@/components/ui/card'
 interface FeatureCardProps {
     icon:ReactNode;
     title:string;
-    description:string
+    description:string;
+    children:React.ReactNode
 }
 
-const FeatureCard:React.FC<FeatureCardProps> = ({icon,title,description}) => {
+const FeatureCard:React.FC<FeatureCardProps> = ({icon,title,description,children}) => {
     return (
         <>
         <Card>
@@ -15,7 +16,8 @@ const FeatureCard:React.FC<FeatureCardProps> = ({icon,title,description}) => {
             {icon}
             <h3 className='text-xl font-bold mb-2'> {title} </h3>
             <p className='text-gray-500 dark:text-gray-400'> {description} </p>
-           </CardContent>
+            {children}
+            </CardContent>
         </Card>
         </>
     )
