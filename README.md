@@ -58,4 +58,8 @@ Deploy the contents of the dist folder to your preferred hosting platform.
 
 ## Contributing
 
+<<<<<<< HEAD
 Contributions are welcome! Please feel free to fork and submit a Pull Request.
+=======
+Contributions are welcome! Please feel free to fork and submit a Pull Request.
+>>>>>>> 05a95a0f4dc69586c9459fe454ed9eea564e52c8
