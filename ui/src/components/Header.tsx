@@ -11,10 +11,10 @@ const Header:React.FC = () => {
            <span className='font-bold'> AskAway </span>
            </Link>
            <nav className='ml-auto flex gap-4 sm:gap-6'>
-                 <Link to='/features' className='text-sm font-medium hover:underline underline-offset-4'>Feature</Link>
-                 <Link to='/features' className='text-sm font-medium hover:underline underline-offset-4'>Pricing</Link>
-                 <Link to='/features' className='text-sm font-medium hover:underline underline-offset-4'>About</Link>
-                 <Link to='/features' className='text-sm font-medium hover:underline underline-offset-4'>Contact</Link>
+                 <Link to='/' className='text-sm font-medium hover:underline underline-offset-4'>Feature</Link>
+                 <Link to='/' className='text-sm font-medium hover:underline underline-offset-4'>Pricing</Link>
+                 <Link to='/' className='text-sm font-medium hover:underline underline-offset-4'>About</Link>
+                 <Link to='/' className='text-sm font-medium hover:underline underline-offset-4'>Contact</Link>
 
            </nav>
         </header>

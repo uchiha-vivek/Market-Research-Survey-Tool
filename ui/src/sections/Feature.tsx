@@ -1,6 +1,6 @@
 import React from "react";
 import FeatureCard from "@/components/FeatureCard";
-import { Zap,Shield,Sparkles } from "lucide-react";
+import { Zap,Sparkles,LayoutDashboardIcon } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 
@@ -22,15 +22,15 @@ const Feature:React.FC = () => {
              
           > <Button onClick={() => handleButtonclick("/survey-generator")}>Learn More</Button></FeatureCard>
           <FeatureCard
-            icon={<Shield className="h-10 w-10 mb-4 text-primary" />}
-            title="Secure & Private"
-            description="Your data is protected with state-of-the-art encryption and privacy measures."
-          > <Button onClick={() => handleButtonclick("SurveyPedia")}>Learn More</Button> </FeatureCard>
+            icon={<LayoutDashboardIcon className="h-10 w-10 mb-4 text-primary" />}
+            title="Dashboard"
+            description="Get valuable insights from your data"
+          > <Button onClick={() => handleButtonclick("/dashboard")}>Learn More</Button> </FeatureCard>
           <FeatureCard
             icon={<Sparkles className="h-10 w-10 mb-4 text-primary" />}
-            title="Intelligent Insights"
-            description="Gain valuable insights from your data with our advanced AI algorithms."
-          ><Button onClick={() => handleButtonclick("SurveyPedia")}>Learn More</Button></FeatureCard>
+            title=" Share Your Survey"
+            description="Share your survey with others"
+          ><Button onClick={() => handleButtonclick("/survey-question")}>Learn More</Button></FeatureCard>
         </div>
       </div>
     </section>
