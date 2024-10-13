@@ -1,50 +1,61 @@
-# React + TypeScript + Vite
+# AskAway: AI-Powered Survey Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+AskAway is an innovative survey platform that leverages LLMs to generate insightful questions and analyze survey responses. This project combines React for the frontend, Firebase for authentication and data storage for intelligent survey generation and analysis.
 
-Currently, two official plugins are available:
+**This project was created with the assistance of AI tools, Cursor AI and Claude-3.5-Sonnet to streamline development and enhance code generation.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- AI-powered survey question generation
+- Intelligent analysis of survey responses
+- User authentication (login and registration)
+- Responsive design for various devices
+- Protected routes for authenticated users
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Tech Stack
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- TypeScript
+- Vite
+- Firebase (Authentication and Firestore)
+- Google Gemini for natural language interaction
+- Tailwind CSS
+- Shadcn UI Components
+- Framer Motion for animations
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Set up your Firebase project and update the configuration in `config/firebase.config.ts`
+4. Set up your Google Generative AI API key 
+5. Run the development server:
+   ```
+   npm run dev
+   ```
+
+## Key Components
+
+### Survey Generation
+This component uses Google's Generative AI to create survey questions based on selected topics.
+
+### Survey Analysis
+This component collects survey responses and uses AI to provide an analysis of the results.
+
+### Authentication
+These components handle user login and registration using Firebase Authentication.
+
+## Deployment
+To build the project for production:
 ```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+npm run build
 ```
+Deploy the contents of the dist folder to your preferred hosting platform.
+
+## Contributing
+
+Contributions are welcome! Please feel free to fork and submit a Pull Request.
