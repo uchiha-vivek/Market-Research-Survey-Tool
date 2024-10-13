@@ -8,7 +8,7 @@ AskAway is an innovative survey platform that leverages LLMs to generate insight
 ![Alt text](./screenshots/ask2.png)
 ![Alt text](./screenshots/ask3.png)
 ![Alt text](./screenshots/ask4.png)
-
+![Alt text](./screenshots/cursor1.png)
 
 ## Features
 
