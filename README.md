@@ -4,6 +4,9 @@ AskAway is an innovative survey platform that leverages LLMs to generate insight
 
 **This project was created with the assistance of AI tools, Cursor AI and Claude-3.5-Sonnet to streamline development and enhance code generation.**
 
+![Alt text](./screenshots/ask1.png)
+
+
 ## Features
 
 - AI-powered survey question generation
